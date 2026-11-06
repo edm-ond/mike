@@ -50,9 +50,8 @@ nav { display: flex; align-items: center; justify-content: space-between; max-wi
 .menu-button { display: none; }
 .btn-hire, .btn { display: inline-flex; align-items: center; justify-content: center; border: 0; border-radius: 999px; cursor: pointer; font-weight: 600; }
 .btn-hire { padding: .65rem 1.15rem; color: #fff; background: var(--primary); font-size: .9rem; }
-.site-name-banner { overflow: hidden; padding: .75rem 0; white-space: nowrap; background: var(--surface); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
-.site-name-banner p { display: inline-block; color: var(--primary); font: 700 48px/1.15 'Playfair Display', serif; animation: name-slide 10s ease-in-out infinite alternate; }
-@keyframes name-slide { from { transform: translateX(0); } to { transform: translateX(calc(100vw - 100%)); } }
+.site-name-banner { padding: .75rem 2rem; background: var(--surface); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+.site-name-banner p { margin: 0; color: var(--primary); font: 700 clamp(1.75rem, 7vw, 48px)/1.15 'Playfair Display', serif; white-space: normal; overflow-wrap: normal; animation: none; }
 
 section { max-width: 1200px; margin: 0 auto; padding: 7rem 2rem; }
 .section-header { margin-bottom: 4rem; text-align: center; }
@@ -134,11 +133,10 @@ footer { padding: 2rem; color: #ecfdf5; background: #166534; }
 .hobby-list li { margin-bottom: .85rem; }
 .hobby-list-ordered { list-style: decimal; }
 .hobby-list-unordered { list-style: disc; }
-.suggestion-label, .hobby-note { color: var(--text-muted); font-family: 'Inter', sans-serif; font-size: .95rem; }
-.hobby-note { margin-top: .75rem; }
+.hobby-empty-state { color: var(--text-muted); text-align: center; }
 
 @media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; } .site-name-banner p { animation: none; } }
 @media (max-width: 1050px) { .nav-links { gap: 1rem; } .hero { gap: 3rem; } .project-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 @media (max-width: 850px) { .about-grid, .contact-container { grid-template-columns: 1fr; } .about-stats { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
-@media (max-width: 768px) { nav { padding: 1rem 1.5rem; } .menu-button { display: inline-flex; order: 3; } .nav-links { position: fixed; top: 72px; left: 0; display: none; width: 100%; padding: 2rem; flex-direction: column; gap: 1.25rem; background: var(--surface); box-shadow: var(--shadow-md); } .nav-links.active { display: flex; } .nav-controls { margin-left: auto; } .btn-hire { display: none; } .hero { flex-direction: column; min-height: auto; padding-top: 3rem; text-align: center; } .hero-image { order: -1; } .image-wrapper { width: min(100%, 320px); } .hero-buttons, .social-links-hero { justify-content: center; } .education-grid, .skills-grid, .project-grid { grid-template-columns: 1fr; } .site-name-banner p { font-size: 2rem; } }
+@media (max-width: 768px) { nav { padding: 1rem 1.5rem; } .menu-button { display: inline-flex; order: 3; } .nav-links { position: fixed; top: 72px; left: 0; display: none; width: 100%; padding: 2rem; flex-direction: column; gap: 1.25rem; background: var(--surface); box-shadow: var(--shadow-md); } .nav-links.active { display: flex; } .nav-controls { margin-left: auto; } .btn-hire { display: none; } .hero { flex-direction: column; min-height: auto; padding-top: 3rem; text-align: center; } .hero-image { order: -1; } .image-wrapper { width: min(100%, 320px); } .hero-buttons, .social-links-hero { justify-content: center; } .education-grid, .skills-grid, .project-grid { grid-template-columns: 1fr; } .site-name-banner p { font-size: clamp(1.5rem, 7vw, 2rem); } }
 @media (max-width: 480px) { section { padding: 4rem 1.5rem; } .about-stats { grid-template-columns: 1fr; } .about-text, .stat-item, .edu-card, .skill-category, .project-content, .contact-card, .contact-form, .timeline-item, .hobbies-content { padding: 1.5rem; } }
