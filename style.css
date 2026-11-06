@@ -1,16 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@600;700;800&display=swap');
 
 :root {
-    --primary: #4f46e5;
-    --primary-dark: #3730a3;
-    --primary-light: #818cf8;
-    --background: #fafaf9;
-    --background-grad: linear-gradient(135deg, #f3f4f6 0%, #fafaf9 50%, #eef2ff 100%);
+    --primary: #2563eb;
+    --primary-dark: #1d4ed8;
+    --primary-light: #60a5fa;
+    --background: #f8fafc;
+    --background-grad: linear-gradient(135deg, #f1f5f9 0%, #f8fafc 50%, #eff6ff 100%);
     --surface: #ffffff;
     --surface-light: #f5f5f4;
-    --text: #1c1917;
-    --text-muted: #78716c;
-    --border: rgba(79, 70, 229, .12);
+    --text: #172033;
+    --text-muted: #526176;
+    --border: rgba(37, 99, 235, .14);
     --shadow-sm: 0 4px 20px rgba(0, 0, 0, .03);
     --shadow-md: 0 8px 30px rgba(0, 0, 0, .06);
     --shadow-lg: 0 15px 40px rgba(0, 0, 0, .08);
@@ -18,13 +18,13 @@
 }
 
 [data-theme="dark"] {
-    --background: #09090b;
-    --background-grad: linear-gradient(135deg, #18181b 0%, #09090b 50%, #1e1b4b 100%);
-    --surface: #18181b;
-    --surface-light: #27272a;
-    --text: #fafafa;
-    --text-muted: #a1a1aa;
-    --border: rgba(129, 140, 248, .22);
+    --background: #0f172a;
+    --background-grad: linear-gradient(135deg, #172033 0%, #0f172a 50%, #172554 100%);
+    --surface: #172033;
+    --surface-light: #26334a;
+    --text: #f8fafc;
+    --text-muted: #b8c4d6;
+    --border: rgba(96, 165, 250, .24);
     --shadow-sm: 0 4px 20px rgba(0, 0, 0, .4);
     --shadow-md: 0 8px 30px rgba(0, 0, 0, .6);
     --shadow-lg: 0 15px 40px rgba(0, 0, 0, .8);
@@ -73,7 +73,7 @@ section { max-width: 1200px; margin: 0 auto; padding: 7rem 2rem; }
 .summary { max-width: 600px; margin-bottom: 2.5rem; color: var(--text-muted); font-size: 1.1rem; }
 .hero-buttons { display: flex; flex-wrap: wrap; gap: 1rem; margin-bottom: 2rem; }
 .btn { padding: 14px 28px; font-size: .95rem; }
-.btn-primary { color: #fff; background: var(--primary); box-shadow: 0 4px 15px rgba(79, 70, 229, .3); }
+.btn-primary { color: #fff; background: var(--primary); box-shadow: 0 4px 15px rgba(37, 99, 235, .28); }
 .btn-primary:hover, .btn-hire:hover { background: var(--primary-dark); }
 .btn-outline { color: var(--text); background: var(--surface); box-shadow: var(--shadow-sm); }
 .social-links-hero { display: flex; gap: 1.25rem; font-size: 1.35rem; }
@@ -122,8 +122,8 @@ section { max-width: 1200px; margin: 0 auto; padding: 7rem 2rem; }
 .form-group input:focus, .form-group textarea:focus { outline: 2px solid var(--primary-light); outline-offset: 2px; }
 .submit-btn { width: 100%; gap: .5rem; }
 
-footer { padding: 4rem 2rem; }
-.footer-bottom { max-width: 1200px; margin: 0 auto; color: var(--text-muted); text-align: center; font-size: .95rem; }
+footer { padding: 2rem; color: #ecfdf5; background: #166534; }
+.footer-bottom { max-width: 1200px; margin: 0 auto; color: #ecfdf5; text-align: center; font-size: .95rem; }
 
 .hobbies-page { background: #eaf6ff; }
 .hobbies-page[data-theme="dark"] { background: #0d1b2a; }
