@@ -1,1 +1,47 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Contact | Mike Soita</title><link rel="stylesheet" href="style.css"></head><body><header class="main-nav"><nav aria-label="Primary navigation"><div class="logo"><a href="index.html">MS.</a></div><button class="menu-button" aria-label="Toggle navigation">Menu</button><ul class="nav-links"><li><a href="index.html">Home</a></li><li><a href="hobbies.html">Hobbies</a></li><li><a class="active" aria-current="page" href="contact.html">Contact</a></li><li><a href="experience.html">Experience</a></li></ul></nav></header><div class="site-name-banner"><p>Mike Soita</p></div><main><section class="contact"><h1>Get In Touch</h1><p><a href="tel:0727308797">Call: 0727308797</a></p><p><a class="btn" href="mailto:mikesoita962@gmail.com">Email me</a></p></section></main><footer><p>© 2026 Mike Soita.</p></footer><script src="script.js"></script></body></html>
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact Mike Soita.">
+  <title>Contact | Mike Soita</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+  <header class="main-nav">
+    <nav aria-label="Primary navigation">
+      <div class="logo"><a href="index.html" aria-label="Mike Soita home">MS<span>.</span></a></div>
+      <button class="menu-button" aria-label="Toggle navigation" aria-expanded="false"><i class="fas fa-bars" aria-hidden="true"></i></button>
+      <ul class="nav-links"><li><a href="index.html">Home</a></li><li><a href="hobbies.html">Hobbies</a></li><li><a href="contact.html" class="active" aria-current="page">Contact</a></li><li><a href="experience.html">Experience</a></li></ul>
+      <div class="nav-controls"><button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode"><i class="fas fa-moon" aria-hidden="true"></i></button><a href="contact.html" class="btn-hire">Hire Me</a></div>
+    </nav>
+  </header>
+  <div class="site-name-banner" aria-label="Mike Soita"><p>Mike Soita</p></div>
+  <main>
+    <section class="contact" aria-labelledby="contact-title">
+      <div class="section-header"><h1 id="contact-title">Get In Touch</h1><p>Have a project in mind or just want to say hi? Let's work together.</p></div>
+      <div class="contact-container">
+        <div class="contact-info">
+          <div class="contact-card content-block"><div class="icon"><i class="fas fa-phone-alt" aria-hidden="true"></i></div><div class="contact-details"><h3>Call Me</h3><a href="tel:0727308797">0727308797</a></div></div>
+          <div class="contact-card content-block"><div class="icon"><i class="fas fa-envelope" aria-hidden="true"></i></div><div class="contact-details"><h3>Email Me</h3><a href="mailto:mikesoita962@gmail.com">mikesoita962@gmail.com</a><a href="mailto:mikesoita962@gmail.com" class="btn btn-primary email-me">Email me</a></div></div>
+        </div>
+        <form id="message-form" class="contact-form content-block">
+          <h3>Send me a message</h3>
+          <div class="form-group"><label for="sender-name">Your name</label><input id="sender-name" name="sender_name" type="text" autocomplete="name" required></div>
+          <div class="form-group"><label for="sender-email">Email address</label><input id="sender-email" name="sender_email" type="email" autocomplete="email" required></div>
+          <div class="form-group"><label for="message-subject">Message subject</label><input id="message-subject" name="subject" type="text" required></div>
+          <div class="form-group"><label for="message-body">Your message</label><textarea id="message-body" name="message" rows="6" required></textarea></div>
+          <div class="form-group form-check"><label><input type="checkbox" name="copy"> Email a copy of this message to your own address</label></div>
+          <button type="submit" class="btn btn-primary submit-btn">Open email to send <i class="fas fa-paper-plane" aria-hidden="true"></i></button>
+          <p id="message-status" class="form-status" role="status" aria-live="polite"></p>
+          <p class="form-help">Your email app opens with the completed message. Review it and send it there.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer><div class="footer-bottom"><p id="copyright-year">&copy; 2026 Mike Soita. All Rights Reserved.</p></div></footer>
+  <script src="script.js"></script>
+  <script src="contact-form.js"></script>
+</body>
+</html>
